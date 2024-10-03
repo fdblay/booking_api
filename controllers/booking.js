@@ -29,7 +29,7 @@ export const addBooking = async (req, res, next) => {
         console.log(req.body);
         await booking.create(req.body);
 
-        res.status(201).json(booking);
+        res.status(201).json('Booking added!');
     } catch (error) {
         next(error);
 
